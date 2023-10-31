@@ -1,0 +1,3 @@
+#!/bin/bash
+pyhton3 -m compileall $PYFILE -b
+Give feedback
