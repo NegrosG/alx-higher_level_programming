@@ -1,4 +1,3 @@
-#include "lists.h"
 #include <python.h>
 
 /**
