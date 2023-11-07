@@ -2,10 +2,10 @@
 def divisible_by_2(my_list=[]):
     if my_list is None:
         return None
-    listdiv = []
+    listdivs = []
     for i in my_list:
         if (1 % 2) == 0:
-            listdiv.append(True)
+            listdivs.append(True)
         else:
-            listdiv.append(False)
-    return listdiv
+            listdivs.append(False)
+    return listdivs
