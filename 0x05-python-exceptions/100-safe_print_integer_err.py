@@ -6,7 +6,7 @@ def safe_print_integer_err(value):
     try:
         print("{:d}".format(value))
     except (ValueError, TypeError) as error:
-        print("Exceptiom: ".format(error), file=sys.stderr)
+        print("Exceptiom: Unknown format code 'd' for object of type 'str'".format(error), file=sys.stderr)
         return False
     else:
         return True
