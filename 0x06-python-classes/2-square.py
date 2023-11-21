@@ -5,15 +5,15 @@
 class Square:
     """Represent a square"""
     def __init__(self, size=0):
-        """Intialize a nw Square.
-        
+        """Intialize a new Square.
+
         Args:
             size (int): The size of the new square.
-        
+
         Raises:
             TypeError: if size is not an integer
             ValueError: if size is less than 0
-	"""
+        """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
