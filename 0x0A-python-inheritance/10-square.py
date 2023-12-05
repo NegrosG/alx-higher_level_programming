@@ -2,6 +2,7 @@
 """Module for class of Rectangle"""
 Rectangle = __import__('9-rectangle').Rectangle
 
+
 class Square(Rectangle):
     """Represent a square."""
     def __init__(self, size):
