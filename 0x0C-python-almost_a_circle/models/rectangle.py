@@ -76,5 +76,17 @@ class Rectangle(Base):
     def __str__(self):
         '''it Returns string info about this rectangle'''
         return '[{}] ({}) {}/{} - {}/{}'.\
-            format(type(self).__name__, self.id, self.x, 
-		   self.y, self.width, self.height)
+            format(type(self).__name__, self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, id=None, width=None, height=None, x=None, y=None):
+        '''Internal method that updates instance attributes via */**args'''
+        if id is not None:
+            self.id = id
+        if width is not None:
+            self.width = width
+        if height is not None:
+            self.height = height
+        if x is not None:
+            self.x = x
+        if y is not None:
+            self.y = y
