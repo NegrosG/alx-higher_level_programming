@@ -8,8 +8,8 @@ if __name__ == "__main__":
     url = sys.argv[1]
 
     try:
-        r = requests.get(url)
-        x_request_id = r.headers.get("X-Request-Id")
+        req = requests.get(url)
+        x_request_id = req.headers.get("X-Request-Id")
         if x_request_id is None:
             print("X-Request-Id header not found.")
         else:
