@@ -7,5 +7,12 @@ import sys
 if __name__ == "__main__":
     url = sys.argv[1]
 
-    req = requests.get(url)
-    print(req.headers.get("X-Requests-Id"))
+    try:
+        r = requests.get(url)
+        x_request_id = r.headers.get("X-Request-Id")
+        if x_request_id is None:
+            print("X-Request-Id header not found.")
+        else:
+            print(x_request_id)
+    except requests.exceptions.RequestException as e:
+        print(f"An error occurred: {e}")
